@@ -13,7 +13,7 @@ import '../css/index.css';
 
 export const pageQuery = graphql`
   query projectPageQuery {
-    allProjectsJson(limit: 3) {
+    allProjectsJson(limit: 4) {
       edges {
         node {
           title
@@ -68,7 +68,7 @@ function projects({ data: { allProjectsJson: { edges } } }) {
         <div className={CSS.topHeader}>
           <div className={CSS.nameContainer}>
             <FancyLink to="/" internal animated>
-              Noah Yamamoto
+              Ramraj Velmurugan
             </FancyLink>
           </div>
         </div>

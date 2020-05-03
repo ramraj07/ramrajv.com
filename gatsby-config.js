@@ -7,8 +7,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Noah Yamamoto`,
-        short_name: `NY`,
+        name: `Ramraj Velmurugan`,
+        short_name: `RV`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,
@@ -56,7 +56,7 @@ module.exports = {
      {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-130379672-2`,
+        trackingId: `UA-8643956-2`,
         respectDNT: true,
       },
     },

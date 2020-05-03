@@ -93,12 +93,12 @@ function HeaderSection() {
         return (
           <header className={`${CSS.Header} ${hideAll && CSS.hide}`} ref={headerRef}>
             <div className={CSS.profileImgContainer}>
-              <img src={profilePic.src} className={CSS.profileImg} alt="Noah Yamamoto" />
+              <img src={profilePic.src} className={CSS.profileImg} alt="Ramraj Velmurugan" />
             </div>
             <div className={CSS.introContainer}>
               <div>Hi there, I&apos;m</div>
               <span className={CSS.fancyGradient}>
-                <span className={CSS.fancyName}>Noah Yamamoto</span>
+                <span className={CSS.fancyName}>Ramraj Velmurugan</span>
               </span>
             </div>
             <div className={CSS.blurbContainer}>

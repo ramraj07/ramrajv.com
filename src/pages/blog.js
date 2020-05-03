@@ -39,12 +39,12 @@ function blog({ data: { allMarkdownRemark: { edges } } }) {
 
   return (
     <section className={CSS.blog}>
-      <HeadTag title="Blog Posts" description="Blog index for NoahYamamoto.com" path="/blog" />
+      <HeadTag title="Blog Posts" description="Blog index for ramrajv.com" path="/blog" />
       <header className={CSS.blogHeader}>
         <div className={CSS.topHeader}>
           <div className={CSS.nameContainer}>
             <FancyLink to="/" internal animated>
-              Noah Yamamoto
+              Ramraj Velmurugan
             </FancyLink>
           </div>
         </div>
