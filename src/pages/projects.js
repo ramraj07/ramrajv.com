@@ -7,7 +7,6 @@ import CSS from '../css/projects.module.css';
 import FancyLink from '../components/FancyLink';
 import ContentBlock from '../components/ContentBlock';
 import ContactSection from '../sections/ContactSection';
-import Canvas from '../components/Canvas';
 
 import 'normalize.css';
 import '../css/index.css';
@@ -65,7 +64,6 @@ function projects({ data: { allProjectsJson: { edges } } }) {
   return (
     <section className={CSS.blog}>
       <HeadTag title="Projects" description="Projects index for NoahYamamoto.com" path="/projects" />
-      <Canvas />
       <header className={CSS.projectsHeader}>
         <div className={CSS.topHeader}>
           <div className={CSS.nameContainer}>

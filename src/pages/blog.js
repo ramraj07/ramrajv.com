@@ -6,7 +6,6 @@ import CSS from '../css/blog.module.css';
 import FancyLink from '../components/FancyLink';
 import ContentBlock from '../components/ContentBlock';
 import ContactSection from '../sections/ContactSection';
-import Canvas from '../components/Canvas';
 
 import 'normalize.css';
 import '../css/index.css';
@@ -41,7 +40,6 @@ function blog({ data: { allMarkdownRemark: { edges } } }) {
   return (
     <section className={CSS.blog}>
       <HeadTag title="Blog Posts" description="Blog index for NoahYamamoto.com" path="/blog" />
-      <Canvas />
       <header className={CSS.blogHeader}>
         <div className={CSS.topHeader}>
           <div className={CSS.nameContainer}>
@@ -80,7 +78,7 @@ function blog({ data: { allMarkdownRemark: { edges } } }) {
 // When I hit 10 blog posts I need to figure out a pagination thingy.
 export const pageQuery = graphql`
   query postsQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 10) {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, limit: 1000) {
       edges {
         node {
           id

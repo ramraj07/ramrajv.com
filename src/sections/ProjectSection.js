@@ -6,7 +6,7 @@ import CSS from '../css/ProjectSection.module.css';
 
 const query = graphql`
   query ProjectQuery {
-    allProjectsJson(limit: 3) {
+    allProjectsJson(limit: 500) {
       edges {
         node {
           title
