@@ -16,7 +16,7 @@ my hand. Hence, I finally managed to muster the effort
  some of that mojo maybe captured in time!
 
 One of my goals with a personal site was to not just make 
-it a simple blog, or a something that takes too much time either.
+it a simple blog, or something that takes too much time either.
 Ideally a site that doesn't cost too much money, is still customizable,
  and looks okay despite my abysmal design skills. A year ago,
 I stumbled on the site by Noah in reddit, and asked him if I could 
