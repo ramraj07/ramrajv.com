@@ -21,15 +21,6 @@ const query = graphql`
         }
       }
     }
-    instaImg: file(relativePath: { eq: "instagram.png" }) {
-      relativePath
-      childImageSharp {
-        fixed(width: 128, height: 128) {
-          src
-          srcSet
-        }
-      }
-    }
     linkedinImg: file(relativePath: { eq: "linkedin.png" }) {
       relativePath
       childImageSharp {
@@ -40,6 +31,15 @@ const query = graphql`
       }
     }
     githubImg: file(relativePath: { eq: "github.png" }) {
+      relativePath
+      childImageSharp {
+        fixed(width: 128, height: 128) {
+          src
+          srcSet
+        }
+      }
+    }
+    scholarImg: file(relativePath: { eq: "scholar.png" }) {
       relativePath
       childImageSharp {
         fixed(width: 128, height: 128) {
@@ -82,7 +82,7 @@ function HeaderSection() {
         const resumeLink = data?.resumeLink?.edges[0]?.node?.publicURL;
         const profilePic = data?.profilePic?.childImageSharp?.fixed;
         const githubImg = data?.githubImg?.childImageSharp?.fixed;
-        const instaImg = data?.instaImg?.childImageSharp?.fixed;
+        const scholarImg = data?.scholarImg?.childImageSharp?.fixed;
         const linkedinImg = data?.linkedinImg?.childImageSharp?.fixed;
 
         return (
@@ -123,6 +123,9 @@ function HeaderSection() {
               </a>
               <a href="https://github.com/ramraj07/" target="_blank" rel="noreferrer noopener" className={CSS.socialLink}>
                 <img src={githubImg.src} className={CSS.socialImg} alt="Github Link" />
+              </a>
+              <a href="https://scholar.google.com/citations?user=aWpiaisAAAAJ&hl=en" target="_blank" rel="noreferrer noopener" className={CSS.socialLink}>
+                <img src={scholarImg.src} className={CSS.socialImg} alt="Google Scholar Link" />
               </a>
             </div>
             <a href="#Blog" className={`${CSS.scrollContainer} ${hideFooter ? CSS.hide : ''}`} ref={footerRef}>

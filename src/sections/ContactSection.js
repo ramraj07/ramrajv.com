@@ -8,17 +8,6 @@ import CSS from '../css/ContactSection.module.css';
 
 const query = graphql`
   query ContactQuery {
-    instaImg: file(relativePath: { eq: "instagram.png" }) {
-      relativePath
-      childImageSharp {
-        fixed(width: 32, height: 32) {
-          src
-          srcSet
-          width
-          height
-        }
-      }
-    }
     linkedinImg: file(relativePath: { eq: "linkedin.png" }) {
       relativePath
       childImageSharp {
@@ -49,7 +38,6 @@ const ContactSection = () => (
     query={query}
     render={(data) => {
       const githubImg = data?.githubImg?.childImageSharp?.fixed;
-      const instaImg = data?.instaImg?.childImageSharp?.fixed;
       const linkedinImg = data?.linkedinImg?.childImageSharp?.fixed;
 
       return (
