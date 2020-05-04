@@ -2,13 +2,10 @@
   {
     "title": "Tweetmap.live",
     "link": "https://youtu.be/dcH6tKmb6Bo",
-    "description":"As part of the Insight Data Sciences program, I built a site that ingested all the tweets from Florida during Hurricane Irma and extracted location information from them, so we can visualize flooding information in a map. The exciting project involved design, data engineering and data science work and started my journey towards creating fully integrated data products."
-    
+    "description":"As part of the Insight Data Sciences program, I built a site that ingested all the tweets from Florida during Hurricane Irma and extracted location information from them, so we can visualize flooding information in a map. The exciting project involved a combination of design, data engineering and data science work."
   },
-  
-  
-{    "title": "Structure-based superresolution",
-    "description": "My PhD lab specialized in advanced image processing for single molecule applications in biology. as part of this effort,we participated in the International Single Molecule Mocroscopy challenge and won first place in several categories. I was able to make some interesting insights on using prior information about biological structures that allowed a 100% improvement on oir metrics.",
+  {    "title": "Structure-based superresolution",
+    "description": "My PhD lab specialized in advanced image processing for single molecule applications in biology. As part of this effort, we participated in the International Single Molecule Mocroscopy Localization Microscopy challenge and won first place in several categories. I was able to make some interesting insights on using prior information about biological structures that allowed a 100% improvement on our metrics.",
     "link": "https://github.com/ramraj07/structure-bassed-fitting"
   },
   
