@@ -1,7 +1,7 @@
 /* eslint-disable */
 module.exports = {
   siteMetadata: {
-    title: `Noah Yamamoto`,
+    title: `Ramraj Velmurugan`,
   },
   plugins: [
     {
