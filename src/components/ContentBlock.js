@@ -38,13 +38,6 @@ const ContentBlock = ({ type, node }) => {
   } if (type === 'project') {
     return (
       <div className={CSS.project}>
-        <div className={CSS.projImgContainer}>
-          <img
-            src={node.image.childImageSharp.fixed.src}
-            className={CSS.projImg}
-            alt={node.title}
-          />
-        </div>
         <div className={CSS.projDescContainer}>
           <h2 className={CSS.projDescTitle}>{node.title}</h2>
           <p className={CSS.projDesc}>{node.description}</p>

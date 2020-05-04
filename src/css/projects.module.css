@@ -42,18 +42,6 @@
   text-align: center;
 }
 
-.GHChart {
-  margin: 1em auto;
-  width: 100%;
-  text-align: center;
-  padding: 1em 0;
-  background-color: #1f1f1f;
-}
-
-.GHChart > img {
-  width: 95vw;
-}
-
 .postsArea {
   margin-top: 2em;
 }

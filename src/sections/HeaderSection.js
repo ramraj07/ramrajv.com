@@ -70,11 +70,6 @@ function HeaderSection() {
   };
 
   useEffect(() => {
-    console.log(
-      "%c Thanks for checking out my site! Check out my Github while you're here if you want to see the real source.",
-      'background-color: black; color: #b200f0; display: block; padding: 1em; text-align: center; font-family: Arial; font-size: 1.2em',
-    );
-    console.log('https://Github.com/Egrodo');
     window.addEventListener('scroll', handleScroll, false);
     return () => window.removeEventListener('scroll', handleScroll, false);
   }, []);
@@ -103,8 +98,9 @@ function HeaderSection() {
             </div>
             <div className={CSS.blurbContainer}>
               <p>
-                I&apos;m a CIS student at Baruch College. I love making things on the web and have worked for cool
-                companies like Marvel, Refugees United, Squarespace, and Facebook.
+                I&apos;m a Data Science Contractor working with <a href="https://komodohealth.com" className={CSS.underlined}>Komodo Health</a>.
+                I create products that can seamlessly summarize complex datasets in insightful ways. 
+                Previously I completed a PhD processing images and looking at immune cells eating up cancer cells.
               </p>
               <FancyLink
                 to={resumeLink}
@@ -113,31 +109,23 @@ function HeaderSection() {
                 }}
                 newTab
               >
-                Full Résumé
+                Full Resume
               </FancyLink>
             </div>
             <div className={CSS.socialContainer}>
               <a
-                href="https://instagram.com/egrodo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={CSS.socialLink}
-              >
-                <img src={instaImg.src} className={CSS.socialImg} alt="Instagram Link" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/~noah"
+                href="https://www.linkedin.com/in/ramraj.velmururgan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={CSS.socialLink}
               >
                 <img src={linkedinImg.src} className={CSS.socialImg} alt="Linkedin Link" />
               </a>
-              <a href="https://github.com/Egrodo/" target="_blank" rel="noreferrer noopener" className={CSS.socialLink}>
+              <a href="https://github.com/ramraj07/" target="_blank" rel="noreferrer noopener" className={CSS.socialLink}>
                 <img src={githubImg.src} className={CSS.socialImg} alt="Github Link" />
               </a>
             </div>
-            <a href="#Projects" className={`${CSS.scrollContainer} ${hideFooter ? CSS.hide : ''}`} ref={footerRef}>
+            <a href="#Blog" className={`${CSS.scrollContainer} ${hideFooter ? CSS.hide : ''}`} ref={footerRef}>
               <div className={CSS.chevronContainer}>
                 <div className={CSS.scrollChevron} />
                 <div className={CSS.scrollChevron} />

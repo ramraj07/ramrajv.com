@@ -34,6 +34,10 @@
   font-size: 1.3em;
 }
 
+.underlined {
+  text-decoration: underline; 
+}
+
 .fancyGradient {
   position: relative;
   display: inline-block;
