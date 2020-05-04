@@ -68,7 +68,7 @@ function PostHeader({ post, listData }) {
         </InternalLink>
         <div className={CSS.nameContainer}>
           <FancyLink to="/" internal animated>
-            Noah Yamamoto
+            Ramraj Velmurugan
           </FancyLink>
         </div>
         <InternalLink
