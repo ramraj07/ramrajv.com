@@ -57,25 +57,17 @@ const ContactSection = () => (
           <div className={CSS.sectionHeader}>
             <div className={CSS.sectionArea}>
               <div className={CSS.emailLink}>
-                <FancyLink to="mailto:noahryamamoto@gmail.com" newTab animated>
-                  NoahRYamamoto@gmail.com
+                <FancyLink to="mailto:ramraj@gmail.com" newTab animated>
+                  ramraj@gmail.com
                 </FancyLink>
               </div>
               <p className={CSS.contactDesc}>
-                Feel free to drop me an email if you have any inquiries or suggestions. I&apos;m
-                always looking for new opportunities to expand my skillset.
+                The site was forked with permission from the brilliant design at &nbsp;
+                <a href="https://noahyamamoto.com/">noahyamamoto.com</a>.
               </p>
               <div className={`${CSS.socialContainer} ${CSS.contact}`}>
                 <a
-                  href="https://instagram.com/egrodo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={CSS.socialLink}
-                >
-                  <Image fixed={instaImg} className={CSS.socialImg} alt="Instagram Link" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/~noah"
+                  href="https://www.linkedin.com/in/ramraj.velmurugan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={CSS.socialLink}
@@ -83,7 +75,7 @@ const ContactSection = () => (
                   <Image fixed={linkedinImg} className={CSS.socialImg} alt="Linkedin Link" />
                 </a>
                 <a
-                  href="https://github.com/Egrodo/"
+                  href="https://github.com/ramraj07/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={CSS.socialLink}
@@ -92,7 +84,7 @@ const ContactSection = () => (
                 </a>
               </div>
               <h5 className={CSS.copyright}>
-                Noah Yamamoto | &copy;
+                Ramraj Velmurugan | &copy;
                 {' '}
                 {new Date().getFullYear()}
               </h5>
