@@ -1,7 +1,25 @@
 [
   {
-    "title": "Dummy Project",
-    "description": "Description coming soon",
-    "link": "https://github.com/ramraj07"
+    "title": "Tweetmap.live",
+    "link": "https://youtu.be/dcH6tKmb6Bo",
+    "description":"As part of the Insight Data Sciences program, I built a site that ingested all the tweets from Florida during Hurricane Irma and extracted location information from them, so we can visualize flooding information in a map. The exciting project involved design, data engineering and data science work and started my journey towards creating fully integrated data products."
+    
+  },
+  
+  
+{    "title": "Structure-based superresolution",
+    "description": "My PhD lab specialized in advanced image processing for single molecule applications in biology. as part of this effort,we participated in the International Single Molecule Mocroscopy challenge and won first place in several categories. I was able to make some interesting insights on using prior information about biological structures that allowed a 100% improvement on oir metrics.",
+    "link": "https://github.com/ramraj07/structure-bassed-fitting"
+  },
+  
+  {
+    "title": "InferAlpha - lending startup for Childrens books",
+    "description": "Worked with Aarthi Ramasubramaniam as the technical cofounder on a Netflix-style book lending startup that specialized in Childrens books. We wrapped up operations in 2017.",
+    "link": "http://ramrajv.com"
+  },
+  {
+    "title": "Pebble watch notifications app",
+    "description":" An android app that served as a companion to the Pebble Canvas application, it allowed the user to send notifications to the Pebble watchface!",
+    "link":"https://play.google.com/store/apps/details?id=com.ramraj.pebblecanvasnotifications"
   }
 ]
