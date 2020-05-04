@@ -63,8 +63,7 @@ function blog({ data: { allMarkdownRemark: { edges } } }) {
       </header>
       <div className={CSS.content}>
         <p className={CSS.indexBlurb}>
-          Thanks for checking out my blog! Here I plan to post small to medium-length write-ups about various
-          frontend topics from little-known API&apos;s to guides.
+          Collection of blog-posts and essays 
         </p>
         <div className={CSS.postsArea}>
           {edges.map(({ node }) => <ContentBlock type="blog" node={node} key={node.frontmatter.title} />)}

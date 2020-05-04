@@ -16,22 +16,22 @@ const indexPage = () => (
     <header className="IndexHeader">
       <HeaderSection />
     </header>
-    <div className="IndexSectionHeader" id="Projects">
+    <div className="IndexSectionHeader" id="Blog">
       <h1>
         <InternalLink
-          to="projects"
+          to="blog"
           target="_blank"
           rel="noopener noreferrer"
-          alt="Link to my projects"
-          title="Link to my projects"
+          alt="Link to my blog"
+          title="Link to my blog"
         >
-          Projects
+          Essays
         </InternalLink>
       </h1>
     </div>
     <div className="IndexContent">
-      <ProjectSection />
       <BlogSection />
+      <ProjectSection />
       <ContactSection />
     </div>
   </>

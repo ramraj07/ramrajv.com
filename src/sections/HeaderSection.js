@@ -98,8 +98,9 @@ function HeaderSection() {
             </div>
             <div className={CSS.blurbContainer}>
               <p>
-                I&apos;m a CIS student at Baruch College. I love making things on the web and have worked for cool
-                companies like Marvel, Refugees United, Squarespace, and Facebook.
+                I&apos;m a Data Science Contractor working with <a href="https://komodohealth.com" className={CSS.underlined}>Komodo Health</a>.
+                I create products that can seamlessly summarize complex datasets in insightful ways. 
+                Previously I completed a PhD processing images and looking at immune cells eating up cancer cells.
               </p>
               <FancyLink
                 to={resumeLink}
@@ -108,7 +109,7 @@ function HeaderSection() {
                 }}
                 newTab
               >
-                Full Résumé
+                Full Resume
               </FancyLink>
             </div>
             <div className={CSS.socialContainer}>
@@ -124,7 +125,7 @@ function HeaderSection() {
                 <img src={githubImg.src} className={CSS.socialImg} alt="Github Link" />
               </a>
             </div>
-            <a href="#Projects" className={`${CSS.scrollContainer} ${hideFooter ? CSS.hide : ''}`} ref={footerRef}>
+            <a href="#Blog" className={`${CSS.scrollContainer} ${hideFooter ? CSS.hide : ''}`} ref={footerRef}>
               <div className={CSS.chevronContainer}>
                 <div className={CSS.scrollChevron} />
                 <div className={CSS.scrollChevron} />
