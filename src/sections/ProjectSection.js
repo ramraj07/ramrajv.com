@@ -12,13 +12,6 @@ const query = graphql`
           title
           description
           link
-          image {
-            childImageSharp {
-              fixed {
-                src
-              }
-            }
-          }
         }
       }
     }
