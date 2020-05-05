@@ -114,7 +114,7 @@ function HeaderSection() {
             </div>
             <div className={CSS.socialContainer}>
               <a
-                href="https://www.linkedin.com/in/ramraj.velmururgan"
+                href="https://www.linkedin.com/in/ramraj-velmurugan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={CSS.socialLink}

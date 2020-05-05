@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 
 const HeadTag = ({ title, description, path }) => (
-  <Helmet defaultTitle="Ramraj Velmurugan" titleTemplate={`${title} - Ramraj`}>
+  <Helmet defaultTitle="Ramraj Velmurugan" titleTemplate={`${title} - Ramraj's personal site`}>
     <title>{title}</title>
     <html lang="en" />
     <meta charSet="utf-8" />
@@ -45,7 +45,7 @@ HeadTag.propTypes = {
 };
 
 HeadTag.defaultProps = {
-  title: 'Personal Site',
+  title: 'Home',
   description: 'Personal website for Ramraj Velmurugan.',
   path: '/',
 };
