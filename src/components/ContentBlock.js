@@ -4,6 +4,14 @@ import FancyLink from './FancyLink';
 
 import CSS from '../css/ContentBlock.module.css';
 
+const myCSS = css`
+    background: ${({ myColor }) => myColor || `black`};
+`;
+
+const Tag = styled('span')`
+    ${myCSS};
+`;
+
 const ContentBlock = ({ type, node }) => {
   if (type === 'blog') {
     return (
@@ -18,9 +26,7 @@ const ContentBlock = ({ type, node }) => {
           </div>
           <div className={CSS.postDate}>
             <span>{node.frontmatter.date}</span>
-          </div>
-          <div className={CSS.postDate}>
-            <span>{node.frontmatter.tag}</span>
+            <Tag myColor="red">{node.frontmatter.tag}</Tag>
           </div>
         </div>
         <div className={CSS.blogContent}>
