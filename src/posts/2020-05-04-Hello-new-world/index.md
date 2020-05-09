@@ -4,7 +4,6 @@ path: '/blog/hell-new-world'
 title: Hello new world
 date: '2020-05-04'
 tag: Technology
-tag_color: #ff0000
 excerpt: My effort to start a new website! With its own blog! Thanks Noah Yamamoto!
 ---
 As it is the case with most of us in this most
