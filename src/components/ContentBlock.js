@@ -19,6 +19,9 @@ const ContentBlock = ({ type, node }) => {
           <div className={CSS.postDate}>
             <span>{node.frontmatter.date}</span>
           </div>
+          <div className={CSS.postDate}>
+            <span>{node.frontmatter.tag}</span>
+          </div>
         </div>
         <div className={CSS.blogContent}>
           <p className={CSS.blogDesc}>{node.frontmatter.excerpt}</p>
