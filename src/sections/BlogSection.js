@@ -15,6 +15,7 @@ const query = graphql`
             date(formatString: "MMM Do, YYYY")
             path
             tag
+            tag_color
           }
         }
       }

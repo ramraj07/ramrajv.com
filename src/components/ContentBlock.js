@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link as InternalLink } from 'gatsby';
 import FancyLink from './FancyLink';
+import { css } from "styled-components";
+import styled from "styled-components";
 
 import CSS from '../css/ContentBlock.module.css';
 
@@ -24,14 +26,15 @@ const ContentBlock = ({ type, node }) => {
               </InternalLink>
             </h2>
           </div>
-          <div className={CSS.postDate}>
-            <span>{node.frontmatter.date}</span>
-            <Tag myColor="red">{node.frontmatter.tag}</Tag>
+          <div className={CSS.postDateTag}>
+            <span className={CSS.postDate}>{node.frontmatter.date}</span>
           </div>
         </div>
         <div className={CSS.blogContent}>
           <p className={CSS.blogDesc}>{node.frontmatter.excerpt}</p>
           <div className={CSS.blogLink}>
+          <Tag myColor={node.frontmatter.tag_color} className={CSS.postTag}>{node.frontmatter.tag}</Tag>
+
             <FancyLink
               to={node.frontmatter.path}
               target="_blank"

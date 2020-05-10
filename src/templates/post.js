@@ -44,6 +44,8 @@ export const postQuery = graphql`
         title
         date
         excerpt
+        tag
+        tag_color
       }
     }
     allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___date] }, limit: 100) {
