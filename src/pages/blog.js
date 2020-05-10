@@ -87,6 +87,8 @@ export const pageQuery = graphql`
             excerpt
             date(formatString: "MMM Do, YYYY")
             path
+            tag
+            tag_color
       
           }
         }
