@@ -1,8 +1,10 @@
 ---
 layout: post
-path: '/blog/hell-new-world'
+path: '/blog/hello-new-world'
 title: Hello new world
 date: '2020-05-04'
+tag: Technology
+tag_color: darkred
 excerpt: My effort to start a new website! With its own blog! Thanks Noah Yamamoto!
 ---
 As it is the case with most of us in this most
@@ -22,7 +24,7 @@ Ideally a site that doesn't cost too much money, is still customizable,
 I stumbled on the site by Noah in reddit, and asked him if I could 
 fork his site. He was more than happy with that (thanks Noah!). 
 
-So now we have a (what I think is) slick site powered by gatsbyjs, and uses GitHub Actions to deploy the static site to S3!
+So now we have (what I think is) a slick site powered by gatsbyjs, and uses GitHub Actions to deploy the static site to S3!
 Still need to figure out SSL and a publications section, but my primary next goal is to be able to 
  seamlessly push markdown posts from my mobile but that seems tricky for now.
 

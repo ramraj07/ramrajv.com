@@ -29,7 +29,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "styled-components": "^5.1.0"
   },
   "repository": {
     "type": "git",
