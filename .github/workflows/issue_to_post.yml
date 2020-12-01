@@ -26,7 +26,6 @@ jobs:
        export DIRNAME=`echo "$(date +'%Y %m %d') ${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        export POSTURL=`echo "/blog/${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        echo $DIRNAME
-       echo "DIRNAME=$DIRNAME >> $GITHUB_ENV
        git checkout -b $DIRNAME
        mkdir src/posts/$DIRNAME
        echo "---" > src/posts/$DIRNAME/index.md
@@ -40,6 +39,9 @@ jobs:
        git commit -m added-post
        echo "@@@"
        cat src/posts/$DIRNAME/index.md
+       echo "Sharing branch name to next actions according to https://stackoverflow.com/a/57969570 ..."
+       echo "DIRNAME=$DIRNAME" >> $GITHUB_ENV
+
 
    - name: Push changes
      uses: ad-m/github-push-action@master
