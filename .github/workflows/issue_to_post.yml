@@ -26,11 +26,14 @@ jobs:
        export DIRNAME=`echo "$(date +'%Y %m %d') ${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        export POSTURL=`echo "/blog/${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        echo $DIRNAME
+       echo "DIRNAME=$DIRNAME >> $GITHUB_ENV
        git checkout -b $DIRNAME
        mkdir src/posts/$DIRNAME
-       echo "---\nlayout: post\npath: '$POSTURL'\n" > src/posts/$DIRNAME/index.md
-       echo "title: ${{ github.event.issue.title }}\n" >> src/posts/$DIRNAME/index.md
-       echo "date: $(date +'%Y-%m-%d')\n" >> src/posts/$DIRNAME/index.md
+       echo "---" > src/posts/$DIRNAME/index.md
+       echo "layout: post" >> src/posts/$DIRNAME/index.md
+       echo "path: '$POSTURL'" >> src/posts/$DIRNAME/index.md
+       echo "title: ${{ github.event.issue.title }}" >> src/posts/$DIRNAME/index.md
+       echo "date: $(date +'%Y-%m-%d')" >> src/posts/$DIRNAME/index.md
        echo "---" >> src/posts/$DIRNAME/index.md
        echo "${{ github.event.issue.body }}" >> src/posts/$DIRNAME/index.md
        git add -A
@@ -42,5 +45,4 @@ jobs:
      uses: ad-m/github-push-action@master
      with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: $DIRNAME
-
+        branch: ${{ env.DIRNAME }}
