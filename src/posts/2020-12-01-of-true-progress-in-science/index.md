@@ -3,6 +3,8 @@ layout: post
 path: '/blog/of-true-progress-in-science'
 title: Of True Progress in Science
 date: 2020-12-01
-excerpt: The DeepMind announcement today has definitely brought out some old thoughts about why I left academia! 
+excerpt: Thoughts on DeepMinds latest AlphaFold announcement and what it says about academic research today
 ---
-The DeepMind announcement today has definitely brought out some old thoughts about why I left academia! 
+Thoughts on DeepMinds latest AlphaFold announcement and what it says about academic research today
+
+Much has been said already about the significance of the Deepmind breakthrough with their new AlphaFold program, which many have proclaimed has solved protein folding.
