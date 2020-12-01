@@ -7,9 +7,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   issues:
     types: [opened, edited]
-  issue_comment:
-    types: [edited]
-  pull_request:
+#   issue_comment:
+#     types: [edited]
+#   pull_request:
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -20,9 +20,24 @@ jobs:
    - uses: actions/checkout@v1
    - name: check for changes
      run: |
-       pwd
-       ls
-       git status
+       git config --global user.name "github-actions[bot]"
+       git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+       
+       export DIRNAME=`echo "$(date +'%Y %m %d') ${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
+       export POSTURL=`echo "/blog/${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
+       echo $DIRNAME
+       git checkout -b $DIRNAME
+       mkdir src/posts/$DIRNAME
+       echo "---\nlayout: post\npath: '$POSTURL'\n" > src/posts/$DIRNAME/index.md
+       echo "title: ${{ github.event.issue.title }}\n" >> src/posts/$DIRNAME/index.md
+       echo "date: $(date +'%Y-%m-%d')\n" >> src/posts/$DIRNAME/index.md
+       echo "---" >> src/posts/$DIRNAME/index.md
+       echo "${{ github.event.issue.body }}" >> src/posts/$DIRNAME/index.md
+       git add -A
+       git commit -m added-post
+       git push
+
+       
 
    - name: $github
      run: echo ${{ github.event.comment.body }} && echo "$GITHUB_CONTEXT"
