@@ -1,0 +1,31 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Create Post from Issue
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  issues:
+    types: [opened, edited]
+  issue_comment:
+    types: [edited]
+  pull_request:
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+ dump:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v1
+   - name: check for changes
+     run: |
+       pwd
+       ls
+       git status
+
+   - name: $github
+     run: echo ${{ github.event.comment.body }} && echo "$GITHUB_CONTEXT"
+     env:
+      GITHUB_CONTEXT: ${{ toJson(github) }}
+
