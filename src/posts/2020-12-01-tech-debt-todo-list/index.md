@@ -8,3 +8,4 @@ excerpt: - [ ] use issue labels as a way to set tags
 - [ ] use issue labels as a way to set tags
 - [ ] ensure only owner created issues are made into PRs
 - [ ] reduce blog post title font size in listing
+- [ ] the date should be issue creation date not currrent date
