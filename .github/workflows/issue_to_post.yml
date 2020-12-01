@@ -35,7 +35,7 @@ jobs:
        echo "${{ github.event.issue.body }}" >> src/posts/$DIRNAME/index.md
        git add -A
        git commit -m added-post
-       git push
+       git push --set-upstream origin $DIRNAME
 
        
 
