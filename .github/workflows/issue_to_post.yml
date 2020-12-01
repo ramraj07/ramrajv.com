@@ -51,4 +51,5 @@ jobs:
    - name: Create Pull Request
      uses: peter-evans/create-pull-request@v3
      with:
+       base: master
        branch: ${{ env.DIRNAME }}
