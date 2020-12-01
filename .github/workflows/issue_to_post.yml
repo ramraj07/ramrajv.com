@@ -20,11 +20,12 @@ jobs:
    - uses: actions/checkout@v1
    - name: check for changes
      run: |
-       git config --global user.name "github-actions[bot]"
-       git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+       git config --global user.name "GitHub Action"
+       git config --global user.email "action@github.com"
        
        export DIRNAME=`echo "$(date +'%Y %m %d') ${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        export POSTURL=`echo "/blog/${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
+       echo "::set-env name=DIRNAME::$DIRNAME"
        echo $DIRNAME
        git checkout -b $DIRNAME
        mkdir src/posts/$DIRNAME
@@ -37,10 +38,9 @@ jobs:
        git commit -m added-post
        git push --set-upstream origin $DIRNAME
 
-       
-
-   - name: $github
-     run: echo ${{ github.event.comment.body }} && echo "$GITHUB_CONTEXT"
-     env:
-      GITHUB_CONTEXT: ${{ toJson(github) }}
+   - name: Push changes
+     uses: ad-m/github-push-action@master
+     with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: $DIRNAME
 
