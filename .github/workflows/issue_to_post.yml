@@ -24,16 +24,16 @@ jobs:
        git config --global user.email "action@github.com"
        
        export DIRNAME=`echo "$(date +'%Y %m %d') ${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
-       export POSTURL=`echo "/blog/${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
+       export POSTURL=`echo "${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        export PRNAME=`echo "$(date +'%Y-%m-%d') ${{ github.event.issue.title }}"`
-       export EXCERPT=`echo "${{ github.event.issue.body }}" | head -1`
-       export MEAT=`echo "${{ github.event.issue.body }}" | tail -n +1`
+       export EXCERPT=`echo "${{ github.event.issue.body }}" | head -2`
+       export MEAT=`echo "${{ github.event.issue.body }}" | tail -n +2`
        echo $DIRNAME
        git checkout $DIRNAME || git checkout -b $DIRNAME
        mkdir -p src/posts/$DIRNAME
        echo "---" > src/posts/$DIRNAME/index.md
        echo "layout: post" >> src/posts/$DIRNAME/index.md
-       echo "path: '$POSTURL'" >> src/posts/$DIRNAME/index.md
+       echo "path: '/blog/$POSTURL'" >> src/posts/$DIRNAME/index.md
        echo "title: ${{ github.event.issue.title }}" >> src/posts/$DIRNAME/index.md
        echo "date: $(date +'%Y-%m-%d')" >> src/posts/$DIRNAME/index.md
        echo "excerpt: $EXCEPRT" >> src/posts/$DIRNAME/index.md
