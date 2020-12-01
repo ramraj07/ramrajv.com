@@ -14,7 +14,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
- dump:
+ create-post:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v1
@@ -26,7 +26,7 @@ jobs:
        export DIRNAME=`echo "$(date +'%Y %m %d') ${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        export POSTURL=`echo "/blog/${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        echo $DIRNAME
-       git checkout -b $DIRNAME
+       git checkout $DIRNAME || git checkout -b $DIRNAME
        mkdir src/posts/$DIRNAME
        echo "---" > src/posts/$DIRNAME/index.md
        echo "layout: post" >> src/posts/$DIRNAME/index.md
@@ -42,9 +42,13 @@ jobs:
        echo "Sharing branch name to next actions according to https://stackoverflow.com/a/57969570 ..."
        echo "DIRNAME=$DIRNAME" >> $GITHUB_ENV
 
-
    - name: Push changes
      uses: ad-m/github-push-action@master
      with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ env.DIRNAME }}
+        
+   - name: Create Pull Request
+     uses: peter-evans/create-pull-request@v3
+     with:
+       branch: ${{ env.DIRNAME }}
