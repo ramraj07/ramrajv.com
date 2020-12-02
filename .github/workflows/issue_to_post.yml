@@ -6,7 +6,7 @@ name: Create Post from Issue
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   issues:
-    types: [opened, edited]
+    types: [edited, labeled]
 #   issue_comment:
 #     types: [edited]
 #   pull_request:
@@ -38,7 +38,7 @@ jobs:
        echo "title: ${{ github.event.issue.title }}" >> src/posts/$DIRNAME/index.md
        echo "date: $TS" >> src/posts/$DIRNAME/index.md
        echo "tag: ${{ github.event.issue.labels[0].name }}" >> src/posts/$DIRNAME/index.md
-       echo "tag_color: ${{ github.event.issue.labels[0].color }}" >> src/posts/$DIRNAME/index.md
+       echo "tag_color: '#${{ github.event.issue.labels[0].color }}'" >> src/posts/$DIRNAME/index.md
        echo "$EXCERPT" >> src/posts/$DIRNAME/index.md
        echo "---" >> src/posts/$DIRNAME/index.md
        echo "$MEAT" >> src/posts/$DIRNAME/index.md
