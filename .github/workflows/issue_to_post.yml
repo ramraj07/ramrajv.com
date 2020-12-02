@@ -28,7 +28,7 @@ jobs:
        export POSTURL=`echo "${{ github.event.issue.title }}" | iconv -t ascii//TRANSLIT | sed -r s/[^a-zA-Z0-9]+/-/g | sed -r s/^-+\|-+$//g | tr A-Z a-z`
        export PRNAME=`echo "$TS ${{ github.event.issue.title }}"`
        export EXCERPT=`echo "${{ github.event.issue.body }}" | head -1`
-       export MEAT=`echo "${{ github.event.issue.body }}" | tail -n +1`
+       export MEAT=`echo "${{ github.event.issue.body }}" | tail -n +2`
        echo $DIRNAME
        git checkout $DIRNAME || git checkout -b $DIRNAME
        mkdir -p src/posts/$DIRNAME
