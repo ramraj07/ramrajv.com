@@ -1,6 +1,6 @@
 Personal site of Ramraj Velmurugan, powered by Gatsby.js.
 
-Shamelessly (proudly) forked from the brilliant design and implementation by [Noah Yamamoto](https://github.com/Egrodo/noahyamamoto.com) for his personal website. Thankful for his permission to fork his design as well. 
+Forked from the design and implementation by [Noah Yamamoto](https://github.com/Egrodo/noahyamamoto.com) for his personal website. Thankful for his permission to fork his design as well. 
 
 To run locally on docker:
 ```
@@ -10,3 +10,5 @@ cd /site
 npm install
 gatsby develop --host 0.0.0.0
 ```
+
+Create new post PRs by creating issues (as owner); first line in comment should start `excerpt: blah blah`.
