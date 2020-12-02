@@ -20,6 +20,7 @@ jobs:
    - uses: actions/checkout@v1
    - name: check for changes
      run: |
+       [ "${{ github.even.issue.author_association }}" == "OWNER" ] && exit 1
        git config --global user.name "GitHub Action"
        git config --global user.email "action@github.com"
        export TS=`echo "${{ gitHub.event.issue.created_at }}" | head -c 10`
@@ -37,7 +38,7 @@ jobs:
        echo "title: ${{ github.event.issue.title }}" >> src/posts/$DIRNAME/index.md
        echo "date: $TS" >> src/posts/$DIRNAME/index.md
        echo "tag: ${{ github.event.issue.labels[0].name }}" >> src/posts/$DIRNAME/index.md
-       echo "tag_color: #${{ github.event.issue.labels[0].color }}" >> src/posts/$DIRNAME/index.md
+       echo "tag_color: ${{ github.event.issue.labels[0].color }}" >> src/posts/$DIRNAME/index.md
        echo "$EXCERPT" >> src/posts/$DIRNAME/index.md
        echo "---" >> src/posts/$DIRNAME/index.md
        echo "$MEAT" >> src/posts/$DIRNAME/index.md
