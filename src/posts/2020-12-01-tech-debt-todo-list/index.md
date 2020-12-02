@@ -9,4 +9,4 @@ except: Manage a list of todo items to maintain the blog
 - [ ] use issue labels as a way to set tags
 - [ ] ensure only owner created issues are made into PRs
 - [ ] reduce blog post title font size in listing
-- [x] the date should be issue creation date not currrent date
+- [x] The date should be issue creation date not currrent date
