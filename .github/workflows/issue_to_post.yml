@@ -60,3 +60,8 @@ jobs:
         source_branch: ${{ env.DIRNAME }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
         pr_title: ${{ env.PRNAME }}
+
+   - name: $github
+     run: echo "$GITHUB_CONTEXT"
+     env:
+      GITHUB_CONTEXT: ${{ toJson(github) }}
