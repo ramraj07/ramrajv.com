@@ -36,7 +36,7 @@ jobs:
        echo "path: '/blog/$POSTURL'" >> src/posts/$DIRNAME/index.md
        echo "title: ${{ github.event.issue.title }}" >> src/posts/$DIRNAME/index.md
        echo "date: $TS" >> src/posts/$DIRNAME/index.md
-       echo "tag: ${{ github.event.issue.labels[0].name }}" >> sex/posts/$DIRNAME/index.md
+       echo "tag: ${{ github.event.issue.labels[0].name }}" >> src/posts/$DIRNAME/index.md
        echo "$EXCERPT" >> src/posts/$DIRNAME/index.md
        echo "---" >> src/posts/$DIRNAME/index.md
        echo "$MEAT" >> src/posts/$DIRNAME/index.md
