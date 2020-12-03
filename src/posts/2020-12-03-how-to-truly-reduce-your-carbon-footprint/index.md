@@ -9,7 +9,7 @@ excerpt: An attempt to think through what actions would really make a meaningful
 ---
 
 Outline:
-1. Triggered by the Adam Ruins Electric cars video where they argue the best thing you can do is to use your existing car as much as possible and then buy a cheap electric
+1. This question was triggered by the [Adam Ruins Electric Cars](https://www.youtube.com/watch?v=MQLbakWESkw) video where they argue the best thing you can do is to use your existing car as much as possible and then buy a cheap electric
 
 2. Can we think the same way about everything? What exactly happens to not just the money we spend on Teslas, but on anything at all?
 
