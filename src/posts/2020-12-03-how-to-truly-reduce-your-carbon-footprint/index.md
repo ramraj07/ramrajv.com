@@ -3,8 +3,8 @@ layout: post
 path: '/blog/how-to-truly-reduce-your-carbon-footprint'
 title: How to truly reduce your carbon footprint
 date: '2020-12-03'
-tag: Science
-tag_color: darkgreen
+tag: Economics
+tag_color: lightpink
 excerpt: An attempt to think through what actions would really make a meaningful dent in our carbon footprints
 ---
 
@@ -26,3 +26,6 @@ Outline:
 8. An alternative is we all just spend less money. On everything. But this is not a good idea probably. The pandemic has shown that if everyone stays home and spends less money, the people who are really affected are the poor and working class, not the rich and privileged.
 
 9. Or if you don't worry about people, or take a libertarian view, the best thing you can do to the planet is sequester as much wealth away from circulation as possible. So in that way, the richest people who never spend their money are the greenest people there are! 
+ 
+---
+[Comment on this post in GitHub](https://github.com/ramraj07/ramrajv.com/issues/29)
