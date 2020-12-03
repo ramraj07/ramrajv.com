@@ -50,12 +50,12 @@ const ContactSection = () => (
                 </FancyLink>
               </div>
               <p className={CSS.contactDesc}>
-                The site was forked with permission from the brilliant design at &nbsp;
+                The site was forked with permission from the design at &nbsp;
                 <a href="https://noahyamamoto.com/">noahyamamoto.com</a>.
               </p>
               <div className={`${CSS.socialContainer} ${CSS.contact}`}>
                 <a
-                  href="https://www.linkedin.com/in/ramraj.velmurugan"
+                  href="https://in.linkedin.com/in/ramraj-velmurugan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={CSS.socialLink}
