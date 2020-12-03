@@ -42,6 +42,10 @@ jobs:
        echo "$EXCERPT" >> src/posts/$DIRNAME/index.md
        echo "---" >> src/posts/$DIRNAME/index.md
        echo "$MEAT" >> src/posts/$DIRNAME/index.md
+       echo " " >> src/posts/$DIRNAME/index.md
+       echo "---" >> src/posts/$DIRNAME/index.md
+       echo "[Comment on this post in GitHub](${{ github.event.issue.html_url }})" >> src/posts/$DIRNAME/index.md
+
        git add -A
        git commit -m added-post
        echo "@@@"
