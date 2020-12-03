@@ -1,4 +1,4 @@
-Personal site of Ramraj Velmurugan, powered by Gatsby.js.
+Source code (with deploy logic) for [ramrajv.com](https://ramrajv.com), Personal site of Ramraj Velmurugan, powered by Gatsby.js.
 
 Forked from the design and implementation by [Noah Yamamoto](https://github.com/Egrodo/noahyamamoto.com) for his personal website. Thankful for his permission to fork his design as well. 
 
