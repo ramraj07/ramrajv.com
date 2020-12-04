@@ -28,7 +28,7 @@ Outline:
 9. Or if you don't worry about people, or take a libertarian view, the best thing you can do to the planet is sequester as much wealth away from circulation as possible. So in that way, the richest people who never spend their money are the greenest people there are! 
 
 Sankey: 
-![sankeymatic_1800x1400](https://user-images.githubusercontent.com/1924068/101147330-3cc1b000-3642-11eb-87f5-a56c9ebca74c.png)
+![sankeymatic_1800x1400](https://user-images.githubusercontent.com/1924068/101147330-3cc1b000-3642-11eb-87f5-a56c9ebca74c.png =600x)
  
 ---
 [Comment on this post in GitHub](https://github.com/ramraj07/ramrajv.com/issues/29)
