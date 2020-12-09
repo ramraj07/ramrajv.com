@@ -17,3 +17,8 @@ _But AlphaFold had no trouble. It returned a detailed image of a three-part prot
 
 
 Everyone is eagerly waiting to learn more about this algorithm, to try to recreate it, and see how they can push its boundaries. Most news articles focus on the benefits in drug discovery, but the most exciting outcomes will be in how this can significantly transform basic research - structure prediction for proteins of interest and their variants can become a routine part of lab research, opening new avenues in every single field of questioning. 
+
+Link to explore https://moalquraishi.wordpress.com/2020/12/08/alphafold2-casp14-it-feels-like-ones-child-has-left-home/
+ 
+---
+[Comment on this post in GitHub](https://github.com/ramraj07/ramrajv.com/issues/25)
