@@ -16,7 +16,12 @@
   },
   {
     "title": "Pebble watch notifications app",
-    "description":" An android app that served as a companion to the Pebble Canvas application, it allowed the user to send notifications to the Pebble watchface!",
+    "description":"An android app that served as a companion to the Pebble Canvas application, it allowed the user to send notifications to the Pebble watchface!",
     "link":"https://play.google.com/store/apps/details?id=com.ramraj.pebblecanvasnotifications"
+  },
+  {
+    "title": "PubPapa.com",
+    "description":"A website that uses Microsoft Academic Graph to create profile pages for all the academics in the world.",
+    "link":"https://www.pubpapa.com"
   }
 ]
