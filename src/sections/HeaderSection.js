@@ -98,7 +98,7 @@ function HeaderSection() {
             </div>
             <div className={CSS.blurbContainer}>
               <p>
-                I&apos;m an Investor and a Data Science Contractor working with <a href="https://komodohealth.com" className={CSS.underlined}>Komodo Health</a>.
+                I&apos;m a Data Scienctist and Software Engineer working with <a href="https://komodohealth.com" className={CSS.underlined}>Komodo Health</a>.
                 I create products that can seamlessly summarize complex datasets in insightful ways. 
                 Previously I completed a PhD processing images and looking at immune cells eating up cancer cells.
               </p>
