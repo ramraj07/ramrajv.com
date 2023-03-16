@@ -5,8 +5,9 @@ title: ChatGPT spitballing fundamental physics theories
 date: '2023-03-16'
 tag: Science
 tag_color: darkgreen
-I first chatted up ChatGPT(4) about what made Einstein special, and challenged it to think of new theories like Einstein would given all we know, and the conversation went as below:
+excerpt: I challenged ChatGPT(4) to think like Einstein and come up with new theories of physics.
 ---
+I first chatted up ChatGPT(4) about what made Einstein special, and challenged it to think of new theories like Einstein would given all we know, and the conversation went as below:
 
 Me: Can you think like Einstein and spitball some hypothesis that tries to unify physics? Given all we know now about it. 
 
