@@ -15,7 +15,6 @@ jobs:
       - name: Build
         run: |
           npm install -g npm-check
-          npm-check
-          npm-check -u
+          npm-check --update
           npm ci
           npm run build
