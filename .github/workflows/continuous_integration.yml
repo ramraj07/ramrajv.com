@@ -16,4 +16,4 @@ jobs:
         run: |
           npm i -g npm-check-updates && ncu -u && npm i
           npm ci
-          npm run build
+          npm run build --legacy-peer-deps
