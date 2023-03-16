@@ -14,5 +14,8 @@ jobs:
           node-version: 19.x
       - name: Build
         run: |
+          npm install -g npm-check
+          npm-check
+          npm-check -u
           npm ci
           npm run build
