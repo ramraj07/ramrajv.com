@@ -16,9 +16,7 @@ jobs:
         run: |
           npm i -g npm-check-updates
           echo ncu doc
-          ncu -d
-          echo ncu u
-          ncu -u
+          ncu --doctor -u
           echo npm install
           npm ci
           echo npm build
