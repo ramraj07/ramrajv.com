@@ -15,8 +15,10 @@ jobs:
       - name: Build
         run: |
           npm i -g npm-check-updates
-          echo ncu run
-          ncu -u --force
+          echo ncu doc
+          ncu -d
+          echo ncu u
+          ncu -u
           echo npm install
           npm ci
           echo npm build
