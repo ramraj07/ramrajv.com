@@ -14,10 +14,10 @@ jobs:
           node-version: 19.x
       - name: Build
         run: |
-          npm i -g npm-check-updates
+          echo npm i -g npm-check-updates
           echo ncu doc
-          ncu --doctor -u
+          echo ncu --doctor -u
           echo npm install
-          npm ci
+          npm ci  --legacy-peer-deps 
           echo npm build
-          npm run build --legacy-peer-deps
+          npm run build 
