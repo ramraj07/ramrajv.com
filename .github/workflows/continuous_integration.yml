@@ -16,7 +16,8 @@ jobs:
         run: |
           npm i -g npm-check-updates
           echo ncu run
-          ncu -u 
-          npm ci
+          ncu -u --force
           echo npm install
+          npm ci
+          echo npm build
           npm run build --legacy-peer-deps
