@@ -14,13 +14,13 @@ jobs:
           node-version: 19.x
       - name: Build
         run: |
-          npm i -g npm-check-updates
-          ncu 
-          ncu -u 
-          cat package-lock.json
+          echo npm i -g npm-check-updates
+          echo ncu 
+          echo ncu -u 
+          echo cat package-lock.json
           echo ncu doc
           echo ncu --doctor -u
           echo npm install
-          npm ci  --legacy-peer-deps 
+          npm install --force
           echo npm build
           npm run build 
