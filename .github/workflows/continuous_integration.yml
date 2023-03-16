@@ -14,7 +14,10 @@ jobs:
           node-version: 19.x
       - name: Build
         run: |
-          echo npm i -g npm-check-updates
+          npm i -g npm-check-updates
+          ncu 
+          ncu -u 
+          cat package-lock.json
           echo ncu doc
           echo ncu --doctor -u
           echo npm install
