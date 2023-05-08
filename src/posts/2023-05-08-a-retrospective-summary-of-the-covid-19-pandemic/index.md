@@ -1,18 +1,18 @@
 ---
 layout: post
 path: '/blog/a-retrospective-summary-of-the-covid-19-pandemic'
-title: A retrospective summary of the COVID-19 pandemic 
+title: A COVID-19 retrospective 
 date: '2023-05-08'
 tag: Science
 tag_color: darkgreen
-excerpt: A highly opinionated summarization of my most important conclusions about the COVID-19 pandemic
+excerpt: A highly opinionated retrospective summarization of my most important conclusions about the COVID-19 pandemic
 ---
 
 I’m summarizing here for myself and anyone else interested, my best estimations about COVID-19 (Covid) from all the science I have seen and personal experiences through the past few years. I hope this can be a good refresher in the future when this episode is inevitably brought up and everyone’s personal opinions might have clouded the nuances of its evolution. These are my personal opinions informed by the best knowledge I could gather from science. 
 
 About me: biotech major, and a biomedical engineering PhD, no other medical degree. I’m not an expert in these topics by any professional standard. I did however spend a decade in wetlabs and know a thing or two about sterile technique, but that’s it. I have read a few hundred scientific publications about Covid, however. 
 
-Before we begin: according to me, masking works, vaccines work and vaccine mandates were warranted. Only the details are up to debate below. I spent inordinate sums of money and effort protecting myself and my family from this disease and was successful in doing so (while still traveling internationally and going on with life as normally as possible). I masked up with N95s from the beginning till March 2023. Got vaxxed with 3 booster shots over the years. 
+Before we begin: according to me, **masking works, vaccines work and vaccine mandates were warranted**. Only the details are up to debate below. I spent inordinate sums of money and effort protecting myself and my family from this disease and was successful in doing so (while still traveling internationally and going on with life as normally as possible). I masked up with N95s from the beginning till March 2023. Got vaxxed with 3 booster shots over the years. 
 
 - In the initial months of the pandemic it was truly difficult to determine the true mode of transmission of the virus or what the precautions to take should have been. 
 - Given what we knew worked for SARS and other epidemics, however, recommending masking was absolutely a good call. N95 masks were always a better option than regular masks, notwithstanding the contradictory back and forth perpetuated by CDC and WHO. 
@@ -50,7 +50,7 @@ Topics I have not formed conclusions on yet:
 - How bad was it for kids? What was done correctly and what could have been better?
 
 Interesting recollections from the early stages of the pandemic:
-- I remember reading in March 2020, a handbook that was released from China https://www.researchgate.net/publication/339998871_Handbook_of_COVID-19_Prevention_and_Treatment. It was so methodical and thoughtful given how little we knew. I wonder how we regressed from that to how the pandemic evolved eventually. I wonder what we could do in the future to avoid the same mistake. 
+- I remember reading in March 2020, a [handbook that was released from China](https://www.researchgate.net/publication/339998871_Handbook_of_COVID-19_Prevention_and_Treatment). It was so methodical and thoughtful given how little we knew. I wonder how we regressed from that to how the pandemic evolved eventually. I wonder what we could do in the future to avoid the same mistake. 
 - When the pandemic begun, in April, I estimated to my mother that the worst-case scenario is that this disease might kill 1 in 100 people in countries like India. Based on personal experiences and knowledge (and how much India likely underreported deaths), this number was not very far off from reality. 1 in 100 people. 
 
 
