@@ -9,7 +9,7 @@ import PostHeader from '../components/PostHeader';
 import 'normalize.css';
 import '../css/dracula-prism.css';
 import '../css/index.css';
-import CSS from '../css/postTemplate.module.css';
+import * as CSS from '../css/postTemplate.module.css';
 
 const Template = ({ data }) => (
   <section>
@@ -35,8 +35,8 @@ Template.defaultProps = {
 };
 
 export const postQuery = graphql`
-  query BlogPostByPath($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query BlogPostByPath($postPath: String!) {
+    markdownRemark(frontmatter: { path: { eq: $postPath } }) {
       html
       id
       frontmatter {
