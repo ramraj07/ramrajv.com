@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as InternalLink, StaticQuery, graphql } from 'gatsby';
 import ContentBlock from '../components/ContentBlock';
 
-import CSS from '../css/ProjectSection.module.css';
+import * as CSS from '../css/ProjectSection.module.css';
 
 const query = graphql`
   query ProjectQuery {

@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'gatsby-image';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import FancyLink from '../components/FancyLink';
 
-import CSS from '../css/ContactSection.module.css';
+import * as CSS from '../css/ContactSection.module.css';
 
 const query = graphql`
   query ContactQuery {
@@ -60,7 +59,7 @@ const ContactSection = () => (
                   rel="noopener noreferrer"
                   className={CSS.socialLink}
                 >
-                  <Image fixed={linkedinImg} className={CSS.socialImg} alt="Linkedin Link" />
+                  <img src={linkedinImg.src} className={CSS.socialImg} alt="Linkedin Link" />
                 </a>
                 <a
                   href="https://github.com/ramraj07/"
@@ -68,7 +67,7 @@ const ContactSection = () => (
                   rel="noopener noreferrer"
                   className={CSS.socialLink}
                 >
-                  <Image fixed={githubImg} className={CSS.socialImg} alt="Github Link" />
+                  <img src={githubImg.src} className={CSS.socialImg} alt="Github Link" />
                 </a>
               </div>
               <h5 className={CSS.copyright}>

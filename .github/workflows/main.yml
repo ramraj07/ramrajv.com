@@ -10,23 +10,23 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use Node.js 10
-        uses: actions/setup-node@v1
+        uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
         with:
-          node-version: 10.x
+          node-version: 20.x
+          cache: 'npm'
       - name: Build
         run: |
-          npm install sharp
           npm ci
           npm run build
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-2
       - name: Deploy
-        uses: jonelantha/gatsby-s3-action@v1
+        uses: jonelantha/gatsby-s3-action@v3
         with:
-          dest-s3-bucket: www.ramrajv.com	
+          dest-s3-bucket: www.ramrajv.com

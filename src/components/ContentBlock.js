@@ -4,7 +4,7 @@ import FancyLink from './FancyLink';
 import { css } from "styled-components";
 import styled from "styled-components";
 
-import CSS from '../css/ContentBlock.module.css';
+import * as CSS from '../css/ContentBlock.module.css';
 
 const myCSS = css`
     background: ${({ myColor }) => myColor || `black`};

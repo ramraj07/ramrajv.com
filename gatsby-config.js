@@ -27,7 +27,8 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -54,10 +55,16 @@ module.exports = {
     },
     `gatsby-plugin-catch-links`,
      {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: `UA-8643956-2`,
-        respectDNT: true,
+        trackingIds: [`UA-8643956-2`],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
       },
     },
     `gatsby-plugin-offline`,

@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import HeadTag from '../components/HeadTag';
-import CSS from '../css/blog.module.css';
+import * as CSS from '../css/blog.module.css';
 import FancyLink from '../components/FancyLink';
 import ContentBlock from '../components/ContentBlock';
 import ContactSection from '../sections/ContactSection';

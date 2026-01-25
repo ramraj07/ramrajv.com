@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import FancyLink from '../components/FancyLink';
 
-import CSS from '../css/HeaderSection.module.css';
+import * as CSS from '../css/HeaderSection.module.css';
 
 const query = graphql`
   query HeaderQuery {

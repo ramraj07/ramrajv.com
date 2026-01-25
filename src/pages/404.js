@@ -2,7 +2,7 @@
 import React from 'react';
 import HeadTag from '../components/HeadTag';
 import FancyLink from '../components/FancyLink';
-import CSS from '../css/FourZeroFour.module.css';
+import * as CSS from '../css/FourZeroFour.module.css';
 
 import '../css/index.css';
 import 'normalize.css';

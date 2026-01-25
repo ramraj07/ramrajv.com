@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link as InternalLink } from 'gatsby';
 import FancyLink from './FancyLink';
 
-import CSS from '../css/PostHeader.module.css';
+import * as CSS from '../css/PostHeader.module.css';
 
 function PostHeader({ post, listData }) {
   const [{ prevPost, nextPost }, setPosts] = useState({ prevPost: false, nextPost: false });

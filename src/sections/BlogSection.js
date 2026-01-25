@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import ContentBlock from '../components/ContentBlock';
 
-import CSS from '../css/BlogSection.module.css';
+import * as CSS from '../css/BlogSection.module.css';
 
 const query = graphql`
   query BlogQuery {
