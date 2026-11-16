@@ -98,8 +98,8 @@ function HeaderSection() {
             </div>
             <div className={CSS.blurbContainer}>
               <p>
-                I&apos;m a Data Scienctist and Software Engineer working with <a href="https://komodohealth.com" className={CSS.underlined}>Komodo Health</a>.
-                I create products that can seamlessly summarize complex datasets in insightful ways. 
+                I&apos;m the Chief Architect at <a href="https://komodohealth.com" className={CSS.underlined}>Komodo Health</a>,
+                where I designed and built Marmot, Komodo&apos;s flagship AI agent platform for healthcare analytics. 
                 Previously I completed a PhD processing images and looking at immune cells eating up cancer cells.
               </p>
               <FancyLink
